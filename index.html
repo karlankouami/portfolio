@@ -8,7 +8,8 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; color: #333; }
     nav { background: #1a1a1a; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
-    nav a { color: white; text-decoration: none; margin-left: 1rem; }
+    nav strong { color: white; }
+    nav a { color: white; text-decoration: none; margin-left: 1rem; font-size: 0.9rem; }
     .hero { text-align: center; padding: 5rem 2rem; background: #f9f6f2; }
     .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
     .hero h1 span { color: #c8a96e; }
@@ -20,6 +21,10 @@
     .skill p { color: #777; font-size: 0.9rem; }
     .cv-item { border-left: 3px solid #c8a96e; padding-left: 1rem; margin-bottom: 1.5rem; }
     .cv-item span { color: #c8a96e; font-size: 0.85rem; }
+    .projet { background: #fff8f0; border: 1px solid #c8a96e; border-radius: 10px; padding: 1rem 1.5rem; margin-bottom: 1rem; }
+    .projet h3 { margin-bottom: 0.3rem; color: #1a1a1a; }
+    .projet p { color: #777; font-size: 0.9rem; }
+    .badge { display: inline-block; background: #1a1a1a; color: white; font-size: 0.75rem; padding: 0.2rem 0.7rem; border-radius: 999px; margin-top: 0.5rem; }
     .contact { background: #1a1a1a; color: white; text-align: center; padding: 3rem 2rem; }
     .contact a { color: #c8a96e; }
     footer { text-align: center; padding: 1rem; color: #999; font-size: 0.85rem; }
@@ -28,11 +33,12 @@
 <body>
 
 <nav>
-  <strong style="color:white">Nkouami Karla</strong>
+  <strong>Nkouami Karla</strong>
   <div>
     <a href="#apropos">À propos</a>
     <a href="#competences">Compétences</a>
     <a href="#cv">Parcours</a>
+    <a href="#projets">Projets</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -44,7 +50,9 @@
 
 <section id="apropos">
   <h2>À propos</h2>
-  <p>Je suis Karla Nkouami, étudiante en Génie Informatique (Niveau 1). En cours d'apprentissage de HTML, CSS et JavaScript, je construis progressivement mes compétences en développement Web.</p>
+  <p>Je suis Karla Nkouami, étudiante en Génie Informatique (Niveau 1). Rigoureuse, curieuse et créative, je suis étudiante en Génie Informatique et je construis mes compétences en développement Web, une ligne de code à la fois.</p>
+  <br/>
+  <p>Ce portfolio reflète mon parcours académique et ma progression dans les technologies du Web.</p>
 </section>
 
 <section id="competences">
@@ -77,14 +85,25 @@
   </div>
 </section>
 
+<section id="projets">
+  <h2>Projets en cours</h2>
+  <div class="projet">
+    <h3>🌤️ Météo IUT de Douala</h3>
+    <p>Application météorologique affichant les conditions en temps réel pour la ville de Douala. Projet de groupe réalisé dans le cadre du cours de Programmation Web.</p>
+    <span class="badge">En cours</span>
+    <span class="badge">HTML • CSS • JavaScript</span>
+  </div>
+</section>
+
 <div class="contact" id="contact">
   <h2 style="color:white">Contact</h2>
   <p>N'hésitez pas à me contacter !</p>
   <br/>
   <a href="mailto:karlankouami@gmail.com">karlankouami@gmail.com</a>
+  <a href="https://github.com/ karlankouami" target ="_blank">github.com/karlankouami</a></p> 
 </div>
 
 <footer>© 2026 Nkouami Nganwa Karla Aurore</footer>
 
 </body>
-</html>
+  </html>
